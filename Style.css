@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
     background-color: #ffffff;
-    padding: 5px 5px;
+    padding: 15px 5px;
 }
 
 /* Navbar Styles */
@@ -85,7 +86,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0px 0px;
-    border: 2px solid black;
+    font-size: 26px;
+    border-bottom: 2px solid rgba(182, 182, 182, 0.541);
   }
 
   .content{
@@ -93,33 +95,48 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 200px;
-    gap: 19px;
+    gap: 20px;
 
 
     h1{
         font-weight: bold;
         font-family: "Poppins", serif;
         font-weight: 800;
-        font-size: 63px;
-        line-height: 60px;
+        font-size: 88px;
+        line-height: 75px;
+        transition: all 0.3s ease-in-out;
     }
+
+    h1:hover{
+        color: #007bff;
+    }
+
+    h4{
+        font-family: "Pacifico", serif;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
 
     button{
     padding: 1.3em 5em;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 600;
-    color: #000;
-    background-color: #fff;
+    color: #ffffff;
+    background-color: #000000;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    width: fit-content;
-    margin-top: 30px;
+    width:350px;
+    height: 59px;
+    margin-top: 28px;
     }
 
     button:hover{
@@ -140,6 +157,11 @@ body {
         height: 600px;
     }
   }
+
+  .about-me{
+
+  }
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
